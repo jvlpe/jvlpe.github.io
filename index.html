@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,42 +16,99 @@
 
 <body>
 
-<!-- LANDING -->
-<section class="landing">
-  <div class="overlay"></div>
+  <!-- LANDING -->
+  <section class="landing">
+    <div class="overlay"></div>
 
-  <div class="hero">
-    <h1>jalpe</h1>
-    <p>developer</p>
+    <div class="hero">
+      <h1>jalpe</h1>
+      <p>developer</p>
 
-    <button onclick="scrollToContent()">Ver proyectos</button>
+      <button onclick="scrollToContent()">Ver proyectos</button>
 
-    <!-- SKILLS EN LANDING -->
-    <div class="skills">
-      <div><i class="fa-brands fa-java" style="color: rgb(255, 255, 255);"></i><span>Java</span></div>
-      <div><i class="fa-brands fa-js" style="color: rgb(255, 255, 255);"></i><span>JS</span></div>
-      <div><i class="fa-solid fa-database" style="color: rgb(255, 255, 255);"></i><span>SQL</span></div>
-      <div><i class="fa-solid fa-leaf" style="color: rgb(255, 255, 255);"></i><span>Spring</span></div>
-      <div><i class="fa-brands fa-html5" style="color: rgb(255, 255, 255);"></i><span>HTML</span></div>
-      <div><i class="fa-brands fa-css3-alt" style="color: rgb(255, 255, 255);"></i><span>CSS</span></div>
-      <div><i class="fa-brands fa-git-alt" style="color: rgb(255, 255, 255);"></i><span>Git</span></div>
+      <!-- SKILLS EN LANDING -->
+      <div class="skills">
+        <div><i class="fa-brands fa-java" style="color: rgb(255, 255, 255);"></i><span>Java</span></div>
+        <div><i class="fa-brands fa-js" style="color: rgb(255, 255, 255);"></i><span>JS</span></div>
+        <div><i class="fa-solid fa-database" style="color: rgb(255, 255, 255);"></i><span>SQL</span></div>
+        <div><i class="fa-solid fa-leaf" style="color: rgb(255, 255, 255);"></i><span>Spring</span></div>
+        <div><i class="fa-brands fa-html5" style="color: rgb(255, 255, 255);"></i><span>HTML</span></div>
+        <div><i class="fa-brands fa-css3-alt" style="color: rgb(255, 255, 255);"></i><span>CSS</span></div>
+        <div><i class="fa-brands fa-git-alt" style="color: rgb(255, 255, 255);"></i><span>Git</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTENIDO -->
+  <section id="content">
+    <h2>Proyectos</h2>
+
+    <div class="projects-grid">
+
+      <!-- PROYECTO 1 -->
+      <div class="card">
+        <div class="card-header">
+          <i class="fa-solid fa-leaf card-icon" style="color:#6ee7b7"></i>
+          <div class="card-tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <h3>REST API con Spring Boot</h3>
+        <p>API RESTful con autenticación JWT, gestión de roles y operaciones CRUD completas. Incluye documentación con
+          Swagger y tests unitarios con JUnit.</p>
+        <div class="card-links">
+          <a href="#" class="btn-link"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn-link btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 -->
+      <div class="card">
+        <div class="card-header">
+          <i class="fa-brands fa-js card-icon" style="color:#fde047"></i>
+          <div class="card-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+        <h3>Task Manager App</h3>
+        <p>Aplicación web de gestión de tareas con drag & drop, filtros por prioridad y estado, y persistencia con
+          LocalStorage. Diseño responsivo.</p>
+        <div class="card-links">
+          <a href="#" class="btn-link"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn-link btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3 -->
+      <div class="card">
+        <div class="card-header">
+          <i class="fa-brands fa-java card-icon" style="color:#fb923c"></i>
+          <div class="card-tags">
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JDBC</span>
+          </div>
+        </div>
+        <h3>Sistema de Inventario</h3>
+        <p>Sistema de gestión de inventario con interfaz de consola, conexión a base de datos MySQL mediante JDBC y
+          generación de informes en PDF.</p>
+        <div class="card-links">
+          <a href="#" class="btn-link"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn-link btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+        </div>
+      </div>
+
     </div>
 
-  </div>
-</section>
+  </section>
 
-<!-- CONTENIDO -->
-<section id="content">
-  <h2>Proyectos</h2>
-
-  <div class="card">
-    <h3>Proyecto demo</h3>
-    <p>App web con login y CRUD.</p>
-  </div>
-
-</section>
-
-<script src="./script.js"></script>
+  <script src="./script.js"></script>
 
 </body>
+
 </html>

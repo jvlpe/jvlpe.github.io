@@ -1,0 +1,119 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background: #0f172a;
+}
+
+/* ===== LANDING ===== */
+.landing {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url("./assets/bg.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* OSCURECER WALLPAPER (CLAVE) */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.404),
+    rgba(0, 0, 0, 0.822)
+  );
+  backdrop-filter: blur(2px);
+}
+
+/* HERO ENCIMA DEL OVERLAY */
+.hero {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  background: rgba(122, 122, 122, 0.164);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.skills i {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+}
+
+/* ===== CONTENIDO ===== */
+#content {
+  min-height: 100vh;
+  padding: 80px 20px;
+}
+
+.card {
+  background: #000000;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+/* TRANSICION SUAVE */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
